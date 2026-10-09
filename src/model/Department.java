@@ -3,7 +3,7 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-/** A department owns (composition) a list of employees and has a manager. */
+
 public class Department {
     private int id;
     private String name;
@@ -75,7 +75,7 @@ public class Department {
         }
     }
 
-    @Override
+    
     public String toString() {
         return "Department{id=" + id + ", name=" + name
                 + ", manager=" + (manager == null ? "None" : manager.getName())
