@@ -3,7 +3,7 @@ package model;
 import java.time.LocalDate;
 import java.time.Period;
 
-/** Employee paid a fixed monthly salary plus a bonus percentage. */
+
 public class MonthlyEmployee extends Employee {
     private double monthlySalary;
     private int vacationDays;
@@ -30,18 +30,18 @@ public class MonthlyEmployee extends Employee {
     public void setBonusPercentage(double bonusPercentage) { this.bonusPercentage = bonusPercentage; }
     public void setHasHealthInsurance(boolean hasHealthInsurance) { this.hasHealthInsurance = hasHealthInsurance; }
 
-    @Override
+   
     public double calculateSalary() {
         return monthlySalary + (monthlySalary * bonusPercentage / 100.0);
     }
 
-    /** One extra vacation day for every full year of service (max 10). */
+   
     public int calculateAdditionalVacation() {
         int years = Period.between(getHireDate(), LocalDate.now()).getYears();
         return Math.min(years, 10);
     }
 
-    @Override
+  
     public String toString() {
         return "MonthlyEmployee{" + super.toString() + ", monthlySalary=" + monthlySalary
                 + ", vacationDays=" + vacationDays + ", bonusPercentage=" + bonusPercentage
