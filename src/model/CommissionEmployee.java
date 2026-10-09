@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-/** Employee paid a base salary plus a commission on sales. */
+
 public class CommissionEmployee extends Employee {
     private double baseSalary;
     private double commissionRate;   // e.g. 0.05 = 5%
@@ -28,12 +28,12 @@ public class CommissionEmployee extends Employee {
         return salesAmount * commissionRate;
     }
 
-    @Override
+  
     public double calculateSalary() {
         return baseSalary + calculateCommission();
     }
 
-    @Override
+    
     public String toString() {
         return "CommissionEmployee{" + super.toString() + ", baseSalary=" + baseSalary
                 + ", commissionRate=" + commissionRate + ", salesAmount=" + salesAmount
