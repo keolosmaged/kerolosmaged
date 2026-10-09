@@ -5,7 +5,7 @@ import model.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-/** Demo class: creates objects with sample data and exercises the system. */
+
 public class MainTest {
     public static void main(String[] args) {
         MonthlyEmployee manager = new MonthlyEmployee(1, "Ahmed Ali", Gender.MALE,
