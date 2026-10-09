@@ -1,7 +1,7 @@
 # Employee Management System
 
-**Name:** YOUR FULL NAME
-**Student ID:** YOUR STUDENT ID
+**Name:** kerolos maged
+**Student ID:** 2302032
 
 ## Description
 Java implementation of a UML class diagram for an employee management system.
