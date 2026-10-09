@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-/** Employee paid per hour, with a higher rate for overtime hours. */
+
 public class HourlyEmployee extends Employee {
     private static final double REGULAR_HOURS_LIMIT = 160; // per month
 
@@ -26,7 +26,7 @@ public class HourlyEmployee extends Employee {
     public void setHoursWorked(double hoursWorked) { this.hoursWorked = hoursWorked; }
     public void setOvertimeRate(double overtimeRate) { this.overtimeRate = overtimeRate; }
 
-    @Override
+
     public double calculateSalary() {
         if (hoursWorked <= REGULAR_HOURS_LIMIT) {
             return hoursWorked * hourlyRate;
@@ -35,7 +35,7 @@ public class HourlyEmployee extends Employee {
         return (REGULAR_HOURS_LIMIT * hourlyRate) + (overtimeHours * overtimeRate);
     }
 
-    @Override
+
     public String toString() {
         return "HourlyEmployee{" + super.toString() + ", hourlyRate=" + hourlyRate
                 + ", hoursWorked=" + hoursWorked + ", overtimeRate=" + overtimeRate
